@@ -22,14 +22,14 @@ thead,
 tr,
 th,
 td {
+    border: 0;
+    font-family: inherit;
+    font-size: 100%;
+    font-style: inherit;
+    font-weight: inherit;
 	margin: 0;
+    outline: 0;
 	padding: 0;
-	border: 0;
-	outline: 0;
-	font-weight: inherit;
-	font-style: inherit;
-	font-size: 100%;
-	font-family: inherit;
 	vertical-align: baseline;
 }
 
@@ -61,40 +61,45 @@ body {
 }
 
 #sect-main {
+    display: flex;
     height: 100%;
     width: 100%;
     background: green;
 }
 
+/* Footer */
 #foot-main {
     background: #e67817;
     height: 4.125em;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#foot-main>span {
+    line-height: 4.125em;
 }
 
 /* Filters */
 #as-filter-area {
     background: yellow;
-    float: left;
     height: 100%;
-    position: relative;
-    width: 200px;
 }
 
 /* Table */
 #sect-table-data {
-    float: left;
+    flex-grow: 1;
     height: 100%;
     background: red;
-    position: relative;
-    width: 400px;
     overflow: auto;
+}
+
+#sect-table-data>table {
+    height: 100%;
+    width: 100%;
 }
 
 /* Record */
 #as-record-area {
     background: blue;
-    float: left;
-    position: relative;
-    width: 100px;
     height: 100%;
 }
