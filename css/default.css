@@ -1,0 +1,100 @@
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li,
+fieldset,
+form,
+label,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+}
+
+html {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    -moz-box-sizing: inherit;
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+html,
+body {
+    border: 0px;
+    height: 100%;
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+}
+
+body {
+    padding: 0 0 4.125em 0;
+}
+
+#sect-main {
+    height: 100%;
+    width: 100%;
+    background: green;
+}
+
+#foot-main {
+    background: #e67817;
+    height: 4.125em;
+}
+
+/* Filters */
+#as-filter-area {
+    background: yellow;
+    float: left;
+    height: 100%;
+    position: relative;
+    width: 200px;
+}
+
+/* Table */
+#sect-table-data {
+    float: left;
+    height: 100%;
+    background: red;
+    position: relative;
+    width: 400px;
+    overflow: auto;
+}
+
+/* Record */
+#as-record-area {
+    background: blue;
+    float: left;
+    position: relative;
+    width: 100px;
+    height: 100%;
+}
