@@ -3,10 +3,49 @@
     <head>
         <meta charset="UTF-8">
         <title>Projects dashboard</title>
+        <link rel="stylesheet" type="text/css" href="css/default.css">
     </head>
     <body>
         <section id="sect-main">
             <aside id="as-filter-area">
+                <div class="div-menutop">
+                    <button id="btn-filter" class="btn-menu">
+                    </button>
+                </div>
+                <div id="div-filtermenu">
+                    <p><input type="search" id="txt-search"></p>
+                    <fieldset id="chk-prjtype" disabled="true">
+                        <div>
+                            <p>
+                                <label for="chk-web">
+                                    <input type="checkbox" id="chk-web">
+                                    <span>Web</span>
+                                </label>
+                            </p>
+                            <p>
+                                <label for="chk-mobile">
+                                    <input type="checkbox" id="chk-mobile">
+                                    <span>Mobile</span>
+                                </label>
+                            </p>
+                        </div>
+                        <div>
+                            <p>
+                                <label for="chk-desktop">
+                                    <input type="checkbox" id="chk-desktop">
+                                    <span>Desktop</span>
+                                </label>
+                            </p>
+                            <p>
+                                <label for="chk-support">
+                                    <input type="checkbox" id="chk-support">
+                                    <span>Support</span>
+                                </label>
+                            </p>
+                        </div>
+                    </fieldset>
+                    <p><input type="date" id="dt-date"></p>
+                </div>
             </aside>
             <section id="sect-table-data">
                 <table>
