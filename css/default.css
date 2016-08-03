@@ -1,3 +1,8 @@
+@font-face {
+	font-family: Roboto;
+	src: url(../fonts/Roboto-Regular.ttf);
+}
+
 html,
 body,
 div,
@@ -49,22 +54,23 @@ html {
 
 html,
 body {
-    border: 0px;
     height: 100%;
-	margin: 0px;
-	padding: 0px;
 	width: 100%;
 }
 
 body {
+    background-color: #0a0b0d;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
     padding: 0 0 4.125em 0;
+    text-transform: uppercase;
 }
 
 #sect-main {
     display: flex;
     height: 100%;
     width: 100%;
-    background: green;
 }
 
 /* Footer */
@@ -81,15 +87,20 @@ body {
 
 /* Filters */
 #as-filter-area {
-    background: yellow;
+    background: #000;
     height: 100%;
+}
+
+#chk-prjtype > div {
+    float: left;
+    position: relative;
+    width: 50%;
 }
 
 /* Table */
 #sect-table-data {
     flex-grow: 1;
     height: 100%;
-    background: red;
     overflow: auto;
 }
 
@@ -98,8 +109,13 @@ body {
     width: 100%;
 }
 
+#sect-table-data th {
+    color: #e67817;
+}
+
 /* Record */
 #as-record-area {
-    background: blue;
+    background: #000;
     height: 100%;
+    width: 20px;
 }
