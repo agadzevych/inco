@@ -9,11 +9,11 @@
         <section id="sect-main">
             <aside id="as-filter-area">
                 <div class="div-menutop">
-                    <button id="btn-filter" class="btn-menu">
+                    <button type="button" id="btn-filter" class="btn-flat">
                     </button>
                 </div>
                 <div id="div-filtermenu">
-                    <p><input type="search" id="txt-search"></p>
+                    <p><input type="search" id="txt-search" placeholder="Search:"></p>
                     <fieldset id="chk-prjtype" disabled="true">
                         <div>
                             <p>
@@ -44,7 +44,7 @@
                             </p>
                         </div>
                     </fieldset>
-                    <p><input type="date" id="dt-date"></p>
+                    <p><input type="date" id="dt-date" placeholder="04-08-2016"></p>
                 </div>
             </aside>
             <section id="sect-table-data">
@@ -58,7 +58,10 @@
 							<th>Type</th>
 							<th>Status</th>
 							<th>Customer</th>
-							<th></th>
+							<th>
+                                <button type="button" id="btn-add" class="btn-flat">
+                                </button>
+                            </th>
 						</tr>
 					</thead>
 					<tbody>
@@ -70,12 +73,24 @@
 							<td>Type</td>
 							<td>Status</td>
 							<td>Customer</td>
-							<td></td>
+							<td>
+                                <button type="button" class="btn-flat btn-trash">
+                                </button>
+                            </td>
 						</tr>
                     </tbody>
                 </table>
             </section>
             <aside id="as-record-area">
+                <form id="frm-record">
+                    <p><input type="text" id="txt-prjname" placeholder="Project name:"></p>
+                    <p><input type="date" id="dt-due" placeholder="Due date:"></p>
+                    <p><input type="date" id="dt-created" placeholder="Created:"></p>
+                    <p><input type="text" id="txt-members" placeholder="Members:"></p>
+                    <p><input type="select" id="sel-type" placeholder="Type:"></p>
+                    <p><input type="select" id="sel-customer" placeholder="Customer:"></p>
+                    <p><button type="submit" id="btn-submit">Create</button></p>
+                </form>
             </aside>
         </section>
         <footer id="foot-main">
