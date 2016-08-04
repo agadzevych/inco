@@ -83,7 +83,7 @@ body {
     z-index: 2;
 }
 
-#foot-main>span {
+#foot-main > span {
     line-height: 4.125em;
 }
 
@@ -91,10 +91,56 @@ body {
 #as-filter-area {
     background: #000;
     height: 100%;
+    transition: width .5s;
+    width: 78px;
+}
+
+#as-filter-area.expanded {
+    width: 369px;
+}
+
+.div-menutop {
+    padding: 15px;
+}
+
+#div-menubtn {
+    background-image: url(../img/menu.png);
+	background-position: center;
+    background-repeat: no-repeat;
+    height: 33px;
+    width: 48px;
+}
+
+#div-menubtn:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+#div-menubtn.checked {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+#div-menubtn.checked:hover {
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.div-menutop input,
+.div-menutop span {
+    display: none;
+}
+
+#div-filtermenu {
+    padding: 30px;
+    width: 100%;
+}
+
+#div-filtermenu p {
+    padding: 10px 0 10px 0;
 }
 
 #chk-prjtype > div {
+    background: #0a0b0d;
     float: left;
+    padding: 5px;
     position: relative;
     width: 50%;
 }
@@ -107,7 +153,7 @@ body {
     position: relative;
 }
 
-#sect-table-data>table {
+#sect-table-data > table {
     height: 100%;
     width: 100%;
 }
