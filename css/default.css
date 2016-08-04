@@ -77,8 +77,10 @@ body {
 #foot-main {
     background: #e67817;
     height: 4.125em;
+    position: relative;
     text-align: center;
     vertical-align: middle;
+    z-index: 2;
 }
 
 #foot-main>span {
@@ -102,6 +104,7 @@ body {
     flex-grow: 1;
     height: 100%;
     overflow: auto;
+    position: relative;
 }
 
 #sect-table-data>table {
@@ -117,5 +120,8 @@ body {
 #as-record-area {
     background: #000;
     height: 100%;
-    width: 20px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    z-index: 1;
 }
