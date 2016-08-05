@@ -91,16 +91,14 @@ body {
 #as-filter-area {
     background: #000;
     height: 100%;
+    overflow: hidden;
+    padding: 15px;
     transition: width .5s;
     width: 78px;
 }
 
 #as-filter-area.expanded {
     width: 369px;
-}
-
-.div-menutop {
-    padding: 15px;
 }
 
 #div-menubtn {
@@ -129,12 +127,31 @@ body {
 }
 
 #div-filtermenu {
+    left: 100px;
+    min-width: 279px;
     padding: 30px;
-    width: 100%;
+    position: relative;
+    transition: left .5s;
+}
+
+#div-filtermenu.visible {
+    left: 0px;
+}
+
+.input-filed {
+    background: rgba(230, 120, 23, .3);
+    border: 0;
+    border-bottom: 2px solid #e67817;
+    height: 62px;
+    width: 279px;
 }
 
 #div-filtermenu p {
     padding: 10px 0 10px 0;
+}
+
+#chk-prjtype {
+    width: 279px;
 }
 
 #chk-prjtype > div {
