@@ -60,11 +60,20 @@ body {
 
 body {
     background-color: #0a0b0d;
+    padding: 0 0 4.125em 0;
+}
+
+body,
+input {
     color: white;
     font-family: 'Roboto', sans-serif;
     font-size: 13px;
-    padding: 0 0 4.125em 0;
     text-transform: uppercase;
+}
+
+h2,
+h3 {
+    display: none;
 }
 
 #sect-main {
@@ -101,23 +110,24 @@ body {
     width: 369px;
 }
 
-#div-menubtn {
+#lbl-menubtn {
     background-image: url(../img/menu.png);
 	background-position: center;
     background-repeat: no-repeat;
+    display: block;
     height: 33px;
     width: 48px;
 }
 
-#div-menubtn:hover {
+#lbl-menubtn:hover {
     background-color: rgba(255, 255, 255, 0.2);
 }
 
-#div-menubtn.checked {
+#lbl-menubtn.checked {
     background-color: rgba(255, 255, 255, 0.4);
 }
 
-#div-menubtn.checked:hover {
+#lbl-menubtn.checked:hover {
     background-color: rgba(255, 255, 255, 0.6);
 }
 
@@ -138,12 +148,16 @@ body {
     left: 0px;
 }
 
-.input-filed {
+.input-field {
     background: rgba(230, 120, 23, .3);
     border: 0;
     border-bottom: 2px solid #e67817;
     height: 62px;
     width: 279px;
+}
+
+.input-field:focus {
+    outline: none;
 }
 
 #div-filtermenu p {
@@ -162,6 +176,33 @@ body {
     width: 50%;
 }
 
+#chk-prjtype input {
+    display: none;
+}
+
+#chk-prjtype label {
+    display: inline-block;
+    line-height: 50px;
+    vertical-align: top;
+}
+
+.spn-check {
+    background-image: url(../img/uncheck.png);
+	background-position: center;
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 40px;
+    width: 44px;
+}
+
+#chk-prjtype input:checked +label .spn-check {
+    background-image: url(../img/check.png);
+}
+
+#chk-prjtype label > span {
+    vertical-align: top;
+}
+
 /* Table */
 #sect-table-data {
     flex-grow: 1;
@@ -171,13 +212,46 @@ body {
 }
 
 #sect-table-data > table {
-    height: 100%;
+    border-collapse: collapse;
+    border-spacing: 20px;
+    border-bottom: 1px solid white;
     width: 100%;
+}
+
+tr {
+   height: 90px; 
+}
+
+/*thead tr {
+    border-bottom: 1px solid white;
+}*/
+
+tbody tr:hover {
+    background: silver;
 }
 
 #sect-table-data th {
     color: #e67817;
+    border-color: #e67817;
+    padding: 20px;
+    vertical-align: middle;
 }
+
+#sect-table-data td {
+    border-color: #fff;
+    padding: 20px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#sect-table-data th:first-child,
+#sect-table-data td:first-child {
+    border-right: 1px solid;
+    font-weight: bold;
+    text-align: left;
+}
+
+
 
 /* Record */
 #as-record-area {
