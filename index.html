@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <title>Projects dashboard</title>
@@ -7,50 +7,55 @@
     </head>
     <body>
         <section id="sect-main">
+            <h2>Projects management</h2>
             <aside id="as-filter-area">
                 <div class="div-menutop">
                     <input type="checkbox" id="chk-menu">
-                    <label for="chk-menu">
+                    <label id="lbl-menubtn" for="chk-menu">
                         <span>Menu</span>
-                        <div id="div-menubtn"></div>
                     </label>
                 </div>
                 <div id="div-filtermenu">
-                    <p><input type="search" id="txt-search" class="input-filed" placeholder="Search:"></p>
+                    <p><input type="search" id="txt-search" class="input-field" placeholder="Search:"></p>
                     <fieldset id="chk-prjtype">
                         <div>
                             <p>
+                                <input type="checkbox" id="chk-web">
                                 <label for="chk-web">
-                                    <input type="checkbox" id="chk-web">
+                                    <span class="spn-check"></span>
                                     <span>Web</span>
                                 </label>
                             </p>
                             <p>
+                                <input type="checkbox" id="chk-mobile">
                                 <label for="chk-mobile">
-                                    <input type="checkbox" id="chk-mobile">
+                                    <span class="spn-check"></span>
                                     <span>Mobile</span>
                                 </label>
                             </p>
                         </div>
                         <div>
                             <p>
+                                <input type="checkbox" id="chk-desktop">
                                 <label for="chk-desktop">
-                                    <input type="checkbox" id="chk-desktop">
+                                    <span class="spn-check"></span>
                                     <span>Desktop</span>
                                 </label>
                             </p>
                             <p>
+                                <input type="checkbox" id="chk-support">
                                 <label for="chk-support">
-                                    <input type="checkbox" id="chk-support">
+                                    <span class="spn-check"></span>
                                     <span>Support</span>
                                 </label>
                             </p>
                         </div>
                     </fieldset>
-                    <p><input type="date" id="dt-date" class="input-filed" placeholder="04-08-2016"></p>
+                    <p><input type="text" id="txt-date" class="input-field" placeholder="04-08-2016"></p>
                 </div>
             </aside>
             <section id="sect-table-data">
+                <h3>Projects</h3>
                 <table>
 					<thead>
 						<tr>
@@ -86,12 +91,16 @@
             </section>
             <aside id="as-record-area">
                 <form id="frm-record">
-                    <p><input type="text" id="txt-prjname" class="input-filed" placeholder="Project name:"></p>
-                    <p><input type="date" id="dt-due" class="input-filed" placeholder="Due date:"></p>
-                    <p><input type="date" id="dt-created" class="input-filed" placeholder="Created:"></p>
-                    <p><input type="text" id="txt-members" class="input-filed" placeholder="Members:"></p>
-                    <p><input type="select" id="sel-type" class="input-filed" placeholder="Type:"></p>
-                    <p><input type="select" id="sel-customer" class="input-filed" placeholder="Customer:"></p>
+                    <p><input type="text" id="txt-prjname" class="input-field" placeholder="Project name:"></p>
+                    <p><input type="text" id="txt-due" class="input-field" placeholder="Due date:"></p>
+                    <p><input type="text" id="txt-created" class="input-field" placeholder="Created:"></p>
+                    <p><input type="text" id="txt-members" class="input-field" placeholder="Members:"></p>
+                    <div class="input-field">
+                        <span class="placeholder">Type:</span>
+                    </div>
+                    <div class="input-field">
+                        <span class="placeholder">Customer:</span>
+                    </div>
                     <p><button type="submit" id="btn-submit">Create</button></p>
                 </form>
             </aside>
