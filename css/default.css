@@ -208,13 +208,23 @@ h3 {
     flex-grow: 1;
     height: 100%;
     overflow: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 90px;
     position: relative;
 }
 
-#sect-table-data > table {
+#sect-table-data div:first-child {
+    border-top: 1px solid white;
+}
+
+#sect-table-data table:first-child {
+    border-bottom: 1px solid white;
+}
+
+#sect-table-data table {
     border-collapse: collapse;
     border-spacing: 20px;
-    border-bottom: 1px solid white;
     width: 100%;
 }
 
@@ -222,9 +232,6 @@ tr {
    height: 90px; 
 }
 
-/*thead tr {
-    border-bottom: 1px solid white;
-}*/
 
 tbody tr:hover {
     background: silver;
@@ -232,13 +239,11 @@ tbody tr:hover {
 
 #sect-table-data th {
     color: #e67817;
-    border-color: #e67817;
     padding: 20px;
     vertical-align: middle;
 }
 
 #sect-table-data td {
-    border-color: #fff;
     padding: 20px;
     text-align: center;
     vertical-align: middle;
@@ -246,9 +251,34 @@ tbody tr:hover {
 
 #sect-table-data th:first-child,
 #sect-table-data td:first-child {
-    border-right: 1px solid;
     font-weight: bold;
     text-align: left;
+}
+
+.btn-flat {
+    background: none;
+    border: none;
+}
+
+/*.btn-flat:focus {
+    outline: none;
+}*/
+
+#btn-add {
+    background-image: url(../img/add.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 43px;
+}
+
+.btn-trash {
+    background-image: url(../img/recycle.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 36px auto;
+    height: 36px;
+    width: 36px;
 }
 
 
@@ -256,6 +286,7 @@ tbody tr:hover {
 /* Record */
 #as-record-area {
     background: #000;
+    display: none;
     height: 100%;
     position: absolute;
     right: 0px;
